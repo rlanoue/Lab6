@@ -14,6 +14,10 @@ Tasks:
 7. finish compareTo Shape Shape
 8. finish toString Shape
 9. Write Rectangle Class
+10. Write Square Class
+11. Complete constructor Circle
+12. Complete getPerimeter Circle
+13. Complete getShapeType Circle
 
 Estimated Time (minutes):
 1. 5
@@ -25,7 +29,10 @@ Estimated Time (minutes):
 7. 15
 8. 10
 9. 30
-
+10. 15
+11. 10
+12. 
+13. 
 
 Actual Time (minutes):
 1. 5
@@ -36,6 +43,10 @@ Actual Time (minutes):
 6. 7
 7. 20
 8. 
-
+9. 8 + 
+10. 4
+11. 8 +
+12. 2
+13. 1
 
 */}
