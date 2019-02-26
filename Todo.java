@@ -13,6 +13,7 @@ Tasks:
 6. finish getPerimeter Polygon
 7. finish compareTo Shape Shape
 8. finish toString Shape
+9. Write Rectangle Class
 
 Estimated Time (minutes):
 1. 5
@@ -23,6 +24,7 @@ Estimated Time (minutes):
 6. 10
 7. 15
 8. 10
+9. 30
 
 
 Actual Time (minutes):
@@ -32,7 +34,8 @@ Actual Time (minutes):
 4. 2
 5. 1
 6. 7
-7. 
+7. 20
+8. 
 
 
 */}

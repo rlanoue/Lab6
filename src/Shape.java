@@ -8,20 +8,20 @@
  */
 public abstract class Shape implements Comparable<Shape>
 {
-    /**
-     * A name identifier for a shape. Not enforced to be unique.
-     */
-    private String id;
+	/**
+	 * A name identifier for a shape. Not enforced to be unique.
+	 */
+	private String id;
 
-    /**
-     * Shape constructor. Sets the name id.
-     *
-     * @param id The created shape's name id.
-     */
-    public Shape(String id)
-    {
-        this.id = id;
-    }
+	/**
+	 * Shape constructor. Sets the name id.
+	 *
+	 * @param id The created shape's name id.
+	 */
+	public Shape(String id)
+	{
+		this.id = id;
+	}
 
 	/**
 	 * Abstract method; defines that all shapes should compute an area. A derived non-abstract class will
@@ -31,17 +31,17 @@ public abstract class Shape implements Comparable<Shape>
 	public abstract double getArea();
 
 	/**
-     * Abstract method; defines that all shapes should compute a perimeter. A derived non-abstract class will
-     * need to provide an implementation for this method.
-     * @return The perimeter of a shape.
-     */
+	 * Abstract method; defines that all shapes should compute a perimeter. A derived non-abstract class will
+	 * need to provide an implementation for this method.
+	 * @return The perimeter of a shape.
+	 */
 	public abstract double getPerimeter();
 
 	/**
-     * Abstract method; defines that all shapes should have a String representing shape type. A derived non-abstract
-     * class will need to provide an implementation for this method.
-     * @return The type of the shape. Should be the classname.
-     */
+	 * Abstract method; defines that all shapes should have a String representing shape type. A derived non-abstract
+	 * class will need to provide an implementation for this method.
+	 * @return The type of the shape. Should be the classname.
+	 */
 	public abstract String getShapeType();
 
 	/**
@@ -72,16 +72,16 @@ public abstract class Shape implements Comparable<Shape>
 	 * the shape with the smaller perimeter comes first. A list of shapes is thus sorted in ascending
 	 * order of area/perimeter when using Shape's compareTo.
 	 *
-     * E.g. we have the shapes A, B, and C. A has a larger area than B and an equal area to C.
-     * A also has a smaller perimeter than C.
-     *  A.compareTo(B) yields 1 to indicate that it should come after B in a sorted list. This is because
-     *  we define that shapes with larger areas (A) should be placed after shapes with smaller areas (B).
-     *  A.compareTo(C) yields -1 to indicate that it should come before C in a sorted list. This is because
-     *  the areas are equal, but we define that shapes with larger perimeters (A) should be placed before
-     *  shapes with smaller perimeters (C).
-     * Thus, the when using compareTo to sort, a list will be sorted as such:
-     *
-     * B A C
+	 * E.g. we have the shapes A, B, and C. A has a larger area than B and an equal area to C.
+	 * A also has a smaller perimeter than C.
+	 *  A.compareTo(B) yields 1 to indicate that it should come after B in a sorted list. This is because
+	 *  we define that shapes with larger areas (A) should be placed after shapes with smaller areas (B).
+	 *  A.compareTo(C) yields -1 to indicate that it should come before C in a sorted list. This is because
+	 *  the areas are equal, but we define that shapes with larger perimeters (A) should be placed before
+	 *  shapes with smaller perimeters (C).
+	 * Thus, the when using compareTo to sort, a list will be sorted as such:
+	 *
+	 * B A C
 	 *
 	 * @return -1, 0, or 1. These values are returned on the following conditions:
 	 *     (this refers to this Shape object, and s refers to the input parameter Shape s)
@@ -96,6 +96,30 @@ public abstract class Shape implements Comparable<Shape>
 	public int compareTo(Shape s)
 	{
 		// TODO: complete this...
+		if (s.getArea() > s.getArea())
+		{
+			return 1; 
+		}
+		else if (s.getArea() < s.getArea())
+		{
+			return -1; 
+		}
+		else if (s.getArea() == s.getArea())
+		{
+			if (s.getPerimeter() > s.getPerimeter())
+			{
+				return 1; 
+			}
+			else if (s.getPerimeter() < s.getPerimeter())
+			{
+				return -1; 
+			}
+			else 
+			{
+				return 0;
+			}
+		}
+		return 4; //4 just being obviously wrong 
 	}
 
 	/**
@@ -105,7 +129,7 @@ public abstract class Shape implements Comparable<Shape>
 	 */
 	public String getId()
 	{
-	    return id;
+		return id;
 	}
 
 	/**
