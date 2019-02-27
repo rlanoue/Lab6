@@ -1,6 +1,6 @@
 public class Todo {/*
 Lab Section_________: 11
-Last Modified_______: 2019-02-25
+Last Modified_______: 2019-02-26
 OU ID_______________: 113475042
 OU EMAIL____________: rlanoue@ou.edu
 
@@ -56,7 +56,6 @@ Estimated Time (minutes):
 23. 10
 24. 30
 
-
 Actual Time (minutes):
 1. 5
 2. 1
@@ -82,6 +81,5 @@ Actual Time (minutes):
 22. 3
 23. 2
 24. 66
-
 
 */}
