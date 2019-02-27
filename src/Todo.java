@@ -18,6 +18,17 @@ Tasks:
 11. Complete constructor Circle
 12. Complete getPerimeter Circle
 13. Complete getShapeType Circle
+14. toString Shape Class
+15. Finish ShapeAreaCompare compare
+16. ^ equals 
+17. Finish ShapePerimeterCompare compare
+18. ^ equals 
+19. constructor ShapeSorter
+20. addShape
+21. sortShapes
+22. sortShapes complex
+23. toString 
+24. Complete Shape Test Writing
 
 Estimated Time (minutes):
 1. 5
@@ -31,8 +42,20 @@ Estimated Time (minutes):
 9. 30
 10. 15
 11. 10
-12. 
-13. 
+12. 10
+13. 10
+14. 10 
+15. 15
+16. 15
+17. 15
+18. 15
+19. 5
+20. 10
+21. 10
+22. 15
+23. 10
+24. 30
+
 
 Actual Time (minutes):
 1. 5
@@ -41,12 +64,24 @@ Actual Time (minutes):
 4. 2
 5. 1
 6. 7
-7. 20
-8. 
-9. 8 + 
+7. 24
+8. 6
+9. 15
 10. 4
-11. 8 +
-12. 2
+11. 9
+12. 12
 13. 1
+14. 3
+15. 6
+16. 2
+17. 3
+18. 1
+19. 5
+20. 2
+21. 3
+22. 3
+23. 2
+24. 66
+
 
 */}

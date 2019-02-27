@@ -20,8 +20,8 @@ public class Circle extends Ellipse
 	public Circle(String id, double radius)
 	{
 		// TODO: complete this...
-		super(id, majorAxis, minorAxis); 
-		this.radius = radius; 
+		super(id, radius, radius); 
+		//this.radius = radius; 
 	}
 
 	/**
@@ -43,6 +43,8 @@ public class Circle extends Ellipse
 	public double getPerimeter()
 	{
 		// TODO: complete this...
+		double radius = super.getMajorAxis();  
+				
 		return 2 * Math.PI * radius; 
 	}
 

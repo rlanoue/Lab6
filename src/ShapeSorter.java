@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 
 /**
@@ -18,11 +19,12 @@ public class ShapeSorter
 	protected ArrayList<Shape> shapes;
 
 	/**
-	 * Constructor. Initializes member fields.
+	 * Constructor. Initializes member fields - member fields are listed in the uml above the second line. 
 	 */
 	public ShapeSorter()
 	{
 		// TODO: complete this...
+		shapes = new ArrayList<Shape>(); 
 	}
 
 	/**
@@ -33,6 +35,8 @@ public class ShapeSorter
 	public void addShape(Shape s)
 	{
 		// TODO: complete this...
+		shapes.add(s); 
+		
 	}
 
 	/**
@@ -43,6 +47,7 @@ public class ShapeSorter
 	public void sortShapes()
 	{
 		// TODO: complete this...
+		Collections.sort(shapes);
 	}
 
 	/**
@@ -56,6 +61,7 @@ public class ShapeSorter
 	public void sortShapes(Comparator<Shape> comparator)
 	{
 		// TODO: complete this...
+		Collections.sort(shapes, comparator);
 	}
 
 	/**
@@ -68,6 +74,12 @@ public class ShapeSorter
 	public String toString()
 	{
 		// TODO: complete this...
+		String shapeWords = ""; 
+		for (int i = 0; i < shapes.size(); i++)
+		{
+			shapeWords+= shapes.get(i).toString();  
+		}
+		return shapeWords; 
 	}
 
 }

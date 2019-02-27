@@ -14,25 +14,37 @@ import java.util.Comparator;
  */
 public class ShapeAreaComparator implements Comparator<Shape>
 {
-    /**
-     * Implementation of Comparator<Shape>'s compare method.
-     *
-     * This method should define an ordering of shapes that would sort shapes in order of increasing area, disregarding
-     * the perimeter of the shapes.
-     *
-     * Look to the documentation in Shape's compareTo to better understand how this should work.
-     *
-     * @param s1 The first shape to be compared.
-     * @param s2 The second shape to be compared.
-     * @return -1, 0, or 1. These values are returned on the following conditions:
-     *     (1) Area of s1 is < area of s2: return -1
-     *     (2) Area of s1 is > area of s2: return 1
-     *     (3) Area of s1 = area of s2:
-     */
+	/**
+	 * Implementation of Comparator<Shape>'s compare method.
+	 *
+	 * This method should define an ordering of shapes that would sort shapes in order of increasing area, disregarding
+	 * the perimeter of the shapes.
+	 *
+	 * Look to the documentation in Shape's compareTo to better understand how this should work.
+	 *
+	 * @param s1 The first shape to be compared.
+	 * @param s2 The second shape to be compared.
+	 * @return -1, 0, or 1. These values are returned on the following conditions:
+	 *     (1) Area of s1 is < area of s2: return -1
+	 *     (2) Area of s1 is > area of s2: return 1
+	 *     (3) Area of s1 = area of s2:
+	 */
 	@Override
 	public int compare(Shape s1, Shape s2)
 	{
 		// TODO: complete this...
+		if (s1.getArea() < s2.getArea())
+		{
+			return -1; 
+		}
+		else if (s1.getArea() > s2.getArea())
+		{
+			return 1; 
+		}
+		else
+		{
+			return 0; 
+		}
 	}
 
 	/**
@@ -40,11 +52,12 @@ public class ShapeAreaComparator implements Comparator<Shape>
 	 * method of this class to determine this.
 	 *
 	 * @param s1 The first shape to be compared.
-     * @param s2 The second shape to be compared.
-     * @return True if the shapes are effectively equal, False if they do not.
+	 * @param s2 The second shape to be compared.
+	 * @return True if the shapes are effectively equal, False if they do not.
 	 */
 	public boolean equals(Shape s1, Shape s2)
 	{
-		// TODO: complete this...
+		// TODO: complete this...		
+	return compare(s1, s2) == 0 ; 
 	}
 }
